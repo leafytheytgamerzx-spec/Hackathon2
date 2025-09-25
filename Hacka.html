@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNityBridge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      /* ✅ Gradient Background */
+      body {
+        background: linear-gradient(to right, #4CAF50, #2196F3);
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      * {
+        text-align: center;
+      }
+
+      .jumbotron {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 1rem auto;
+        max-width: 900px;
+      }
+
+      .search {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        border-radius: 10px;
+        display: inline-block;
+      }
+
+      input, button {
+        margin: 5px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      #subject {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px;
+      }
+
+      #subject > a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #subject > a div {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 220px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: left;
+      }
+
+      #subject > a div:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      }
+
+      /* ✅ Unique colored borders for each class */
+      #a { border-left: 6px solid grey;   border-right: 6px solid grey; }
+      #b { border-left: 6px solid orange; border-right: 6px solid orange; }
+      #c { border-left: 6px solid red;    border-right: 6px solid red; }
+      #d { border-left: 6px solid blue;   border-right: 6px solid blue; }
+      #e { border-left: 6px solid indigo; border-right: 6px solid indigo; }
+      #f { border-left: 6px solid green;  border-right: 6px solid green; }
+      #g { border-left: 6px solid brown;  border-right: 6px solid brown; }
+      #h { border-left: 6px solid black;  border-right: 6px solid black; }
+      #i { border-left: 6px solid teal;   border-right: 6px solid teal; }
+      #j { border-left: 6px solid violet; border-right: 6px solid violet; }
+      #k { border-left: 6px solid gold;   border-right: 6px solid gold; }
+      #l { border-left: 6px solid crimson;border-right: 6px solid crimson; }
+
+      footer {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 900px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .class-info {
+        font-size: 0.9rem;
+        margin-top: 5px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>EduNity Bridge</h1>
+      <p>“Bridging rural and urban education, so every child can shine.”</p>
+    </div>
+
+    <nav>    
+      <div class="search">
+        <h2>Find your Class</h2>
+     
+        <button id="search-btn">Search</button>
+        <button id="show-all">View All</button>
+        <button id="show-less">View Less</button>
+     
+      </div><br>
+    </nav><br>
+
+    <div id="subject">
+      <a href="class1.html"><div id="a">
+        <h3>Class I</h3>
+        <p class="class-info">Basic knowledge: Learn alphabets, numbers, and simple words.</p>
+      </div></a>
+
+      <a href="class2.html"><div id="b">
+        <h3>Class II</h3>
+        <p class="class-info">Basic knowledge: Simple addition, subtraction, and short stories.</p>
+      </div></a>
+
+      <a href="class3.html"><div id="c">
+        <h3>Class III</h3>
+        <p class="class-info">Basic knowledge: Multiplication, division, and general knowledge.</p>
+      </div></a>
+
+      <a href="class4.html"><div id="d">
+        <h3>Class IV</h3>
+        <p class="class-info">Basic knowledge: Fractions, basic science, and social studies.</p>
+      </div></a>
+
+      <a href="class5.html"><div id="e">
+        <h3>Class V</h3>
+        <p class="class-info">Basic knowledge: Decimals, basic history, and environmental science.</p>
+      </div></a>
+
+      <a href="class6.html"><div id="f">
+        <h3>Class VI</h3>
+        <p class="class-info">Basic knowledge: Algebra basics, geography, and general science.</p>
+      </div></a>
+
+      <a href="class7.html"><div id="g">
+        <h3>Class VII</h3>
+        <p class="class-info">Basic knowledge: Geometry, biology basics, and simple physics.</p>
+      </div></a>
+
+      <a href="class8.html"><div id="h">
+        <h3>Class VIII</h3>
+        <p class="class-info">Basic knowledge: Advanced math, chemistry basics, and history.</p>
+      </div></a>
+
+
+      </div></a>
+
+
+    </div><br>
+
+    <footer>
+      <div style="background: white; border-radius: 10px; padding: 15px; margin: 20px auto; max-width: 900px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <p>&copy; 2025 EduNityBridge. All rights reserved.</p>
+        <p>Built with ❤️ by Leader and Team.</p>
+      </div>
+    </footer>
+
+    <script>
+      let classes = ["a","b","c","d","e","f","g","h","i","j","k","l"];
+
+      // ✅ Hide all classes when page loads
+      window.onload = function() {
+        classes.forEach(function(id) {
+          document.getElementById(id).parentElement.style.display = "none";
+        });
+      };
+
+      // ✅ Show only searched class
+      document.getElementById("search-btn").addEventListener("click", function () {
+        let input = document.getElementById("classNumber").value.trim();
+
+        // Hide all first
+        classes.forEach(function (id) {
+          document.getElementById(id).parentElement.style.display = "none";
+        });
+
+        // Show only the selected one
+        if (input >= 1 && input <= 12) {
+          let targetId = classes[input - 1];
+          document.getElementById(targetId).parentElement.style.display = "block";
+        } else {
+          alert("Please enter a class number between 1 and 12.");
+        }
+      });
+
+      // ✅ Show all button
+      document.getElementById("show-all").addEventListener("click", function () {
+        classes.forEach(function (id) {
+          document.getElementById(id).parentElement.style.display = "block";
+        });
+      });
+
+      // ✅ Show less button
+      document.getElementById("show-less").addEventListener("click", function () {
+        classes.forEach(function (id) {
+          document.getElementById(id).parentElement.style.display = "none";
+        });
+      });
+
+      // ✅ Enter key functionality
+      document.getElementById("classNumber").addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          document.getElementById("search-btn").click();
+        }
+      });
+    </script>
+  </body>
+</html>
